@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red13\green0\blue129;\red235\green236\blue237;
+\red36\green38\blue41;\red43\green39\blue19;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c6275\c6275\c58039;\cssrgb\c93725\c94118\c94510;
+\cssrgb\c18824\c20000\c21176;\cssrgb\c22353\c20000\c9412;}
+{\info
+{\title explanations}}\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Critter\
+Lucia Fuentes\
+1)
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Comment out the using namespace std; \
+\
+Test critter.cpp file line errors:\
+\
+Unknown type name 'string';\
+This means that given that string is an object it cannot use it, as the std library is not specified, therefore string has no meaning, given it is an object type std, not a data type\
+A potential solution is using a char array ;.\
+\
+Use of undeclared identifier 'cout'; \
+Given that cout is a method of the type std, it cannot use out without the std line , a solution is using another function like printf() or puts(), or simply writing on top 
+\f2\fs26 \cf3 \cb4 \strokec3 using\cf5 \strokec5  std::cout;\cf6 \strokec6 \
+
+\f1\fs24 \cf2 \cb1 \strokec2 \
+\
+Use of undeclared identifier 'cin'; did you mean 'std::cin'?\
+This is the same problem as the one above, the solution would be using line above 
+\f2\fs26 \cf3 \cb4 \strokec3 using\cf5 \strokec5  std::cin;, or another function such as fgets().\cf6 \strokec6 \
+
+\f1\fs24 \cf2 \cb1 \strokec2 \
+\
+Use of undeclared identifier 'endl'; did you mean 'std::endl'?
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+The method ends, adds a line after, it is a method type std, the compiler doesn\'92t know how to work without std. a Solution is printing  \'93/n.\'94\
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 b) Also remove the Critter:: prefix\
+Variable has incomplete type 'void' and C++ requires a type specifier for all declarations\
+This means that the function won\'92t return anything as there is not reference to the file Critter, a solution is  naming functions or declaring them at the beginning with the link to Critters, and then on the second declaration they will work.}

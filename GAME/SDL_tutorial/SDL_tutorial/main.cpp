@@ -1,11 +1,11 @@
 //
 //  main.cpp
-//  assignment1
+//  SDL_tutorial
 //
-//  Created by Lucia  Fuentes on 11/15/18.
-//  Copyright © 2018 Lucia Fuentes. All rights reserved.
+//  Created by Lucia  Fuentes on 2/4/19.
+//  Copyright © 2019 Lucia Fuentes. All rights reserved.
 //
-
+#include <SDL2/SDL.h>
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
